@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> veraties of For loop demo</title>
+    <script>
+        let n=Number(prompt("Enter the number:"));
+        let soe,sod,i=1;
+        soe=sod=0;
+        for(;;){
+           if(i>n){
+            break;
+           }
+           (i%2===0? (soe=soe+i):(sod=sod+i));
+           i++;
+        }
+        document.write(`sum of even nos from 1 to ${n}is ${soe}<br>`);
+        document.write(`sum of odd nos from 1 to  ${n}is ${sod}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

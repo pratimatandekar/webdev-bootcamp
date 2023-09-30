@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop demo</title>
+    <script>
+        let n=Number(prompt("Enter the number:"));
+        let ev,od,i=1;
+        ev=od=0;
+        for(; i <=n; i++){
+            i%2==2? (ev=ev+i):(od=od+i);
+        }
+        document.write(`sum of even number is ${ev}<br>`);
+        document.write(`sum of odd number is ${od}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
