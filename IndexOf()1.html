@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using indexOf() Method</title>
+    <script>
+        let fruits=["guava","apple","graps","banana","apple","kiwi"];
+        document.write(`Value: ${fruits}<br>`);
+
+        let result=fruits.indexOf("apple",-3);  
+        document.write(`Index of apple?: ${result}<br>`);
+        
+        result=fruits.indexOf("apple",result+1);
+        document.write(`Next Index of apple?: ${result}<br>`);
+        result=fruits.indexOf("pineapple");
+        document.write(`Index of pineapple?: ${result}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
