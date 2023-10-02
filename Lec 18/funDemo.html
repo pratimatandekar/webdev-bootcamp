@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersize</title>
+    <script>
+        function average(){
+            let sum=0;
+            for(let x of arguments){
+              sum+=x;
+            }
+            document.write(`sum is ${sum}<br>`);
+        document.write(`Avg is ${sum/arguments.length}<br>`);
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <script>
+        document.write("<strong>First call</strong><br>");
+        average(5,20,9,11)
+        document.write("<strong>Second call</strong><br>");
+        average (4,7,1);
+         document.write("<strong>Third call</strong><br>");
+         average (2,6,7,11,9,15);
+    </script>
+</body>
+</html>

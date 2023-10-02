@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope demo</title>
+    <script>
+    var a=10;
+    function f1(){
+        alert(`inside f1 a is ${a}`);
+    }
+    function f2(){
+        alert(`inside f2 a is ${a}`);
+    }
+    
+       
+    
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <input type="button" value="Call f1" onclick="f1()"/><br>
+        <input type="button" value="Call f2" onclick="f2()"/>
+    
+    </div>
+
+       
+       
+</body>
+</html>
