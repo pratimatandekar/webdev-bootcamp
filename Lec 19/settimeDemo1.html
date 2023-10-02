@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout()/ clearTimeout() demos</title>
+    <script >
+        var fnid;
+
+    function showTime(){
+     console.log(new Date());
+   }
+
+   function start(){
+    fuid= setTimeout(showTime,1000);
+   }
+
+   function stop(){
+    console.log(" stoped!!!");
+    clearTimeout(fuid);
+   }
+     
+    </script>
+</head>
+<body>
+    <input type="button" onclick="start()" value="start">
+    <input type="button" onclick="stop()" value="Stop">
+</body>
+</html>

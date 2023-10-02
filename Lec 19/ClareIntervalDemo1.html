@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval() demo</title>
+    <script >
+        let id;
+    function showDateTime(){
+    let x = new Date();
+    console.log(x);
+   }
+   function startTimer(){
+    console.log("Timer about to start 1 second");
+     id=setInterval(showDateTime,1000);
+   }
+   function stopTimer(){
+    console.log("Timer stoped");
+    clearInterval(id);
+   }
+     
+    </script>
+</head>
+<body>
+    <input type="button" onclick="startTimer()" value="start">
+    <input type="button" onclick="stopTimer()" value="Stop">
+</body>
+</html>
