@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var v/s let</title>
+    <script>
+        function test(){
+            var str="Sachin";
+            if (str === "Sachin"){
+                var a=10;
+                document.write(`Inside block a=${a}`);
+                document.write(`<br>`);
+            }
+            document.write(`Outside block a=${a}`);
+        }
+        test();
+        document.write(`Outside function a=${a}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

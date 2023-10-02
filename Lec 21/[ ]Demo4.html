@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Whether Property Exist or Not </title>
+    <script>
+        let myCar = new Object();
+        myCar["company"]="maruti";
+        myCar["model"]="Boleno";
+        myCar["year"]=2014;
+        
+       
+       
+        delete myCar.year;
+        
+        console.log("company" in  myCar);
+        console.log("model" in myCar);
+        console.log("year" in myCar);
+
+
+        console.log("color"+ myCar.color);
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting Properties </title>
+    <script>
+        let myCar = new Object();
+        myCar['company']="Maruti";
+        myCar['model']="Boleno";
+        myCar['year']=2014;
+        
+       
+        console.log("My car details:");
+        console.log("company:"+ myCar.company);
+        console.log("Model:"+ myCar.model);
+        console.log("year:"+ myCar.year);
+
+        delete myCar.year;
+        console.log("My  car details:")
+        console.log("company:"+ myCar.company);
+        console.log("Model:"+ myCar.model);
+        console.log("year:"+ myCar.year);
+
+
+        console.log("color"+ myCar.color);
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

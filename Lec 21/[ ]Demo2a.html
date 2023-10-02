@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Properties Values // creating two diff obj</title>
+    <script>
+        let myCar1 = new Object();
+        myCar1['company']="Maruti";
+        myCar1['model']="Boleno";
+        myCar1['year']=2014;
+        
+        let myCar2 = new Object();
+        myCar2["company"] = "Honda" ;
+        myCar2["model"] ="Amaze" ;
+        myCar2["year"] =2020;
+       
+        console.log("My first car:");
+        console.log("company:"+ myCar1.company);
+        console.log("Model:"+ myCar1.model);
+        console.log("year:"+ myCar1.year);
+
+        console.log("I sold my first car and bought my second car:");
+
+       
+        console.log("My second car:")
+        console.log("company:"+ myCar2.company);
+        console.log("Model:"+ myCar2.model);
+        console.log("year:"+ myCar2.year);
+
+        console.log(myCar1==myCar2);
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

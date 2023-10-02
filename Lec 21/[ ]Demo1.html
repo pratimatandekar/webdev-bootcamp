@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Non Existing Properties</title>
+    <script>
+        let myCar = new Object();
+        myCar['company']="Maruti";
+        myCar['model']="Boleno";
+        myCar['year']=2014;
+        myCar['reg no']="MP044C2314";
+        console.log("price:"+ myCar.price);
+        console.log("company:"+ myCar.company);
+        console.log("Model:"+ myCar.model);
+        console.log("year:"+ myCar.year);
+        console.log("reg no:"+ myCar["reg no"]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
