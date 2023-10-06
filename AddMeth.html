@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding methods</title>
+    <script>
+        let myCar = new Object();
+        myCar ["company"] = "Maruti" ;
+        myCar ["model"] = "Baleno" ;
+        myCar ["year"] = 2014 ;
+        myCar ["start"]=function() {
+            console.log("starting the car . . .");
+        };
+        
+        myCar.stop =function() {
+            console.log("stopping the car. . .");
+        };
+       
+    </script>
+</head>
+<body>
+   <script> myCar.start();
+    myCar.stop();
+   </script>
+</body>
+</html>

@@ -4,17 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Iterating Over The Object</title>
+		<title>Creating Nested Object Using Object Literal</title>
 		<script>
 			let myCar = {
 				company: "Maruti",
 				model: "Baleno",
-				year: 2012,
+				year: 2014,
+				stereo: {
+					name: "Kenwood",
+					vol: 25,
+				},
 			};
-
-			for (let x in myCar) {
-				console.log(myCar[x]);
-			}
+			console.log(myCar);
 		</script>
 	</head>
 
