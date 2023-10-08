@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Accessing Object Properties In Method</title>
+    <title>Button</title>
     <script>
-      let myCar = new Object();
-      myCar.company = "Maruti";
-      myCar.model = "Baleno";
-      myCar.year = 2014;
-      myCar.showDetails = function () {
-        console.log(myCar.company + "," + myCar.model + "," + myCar.year);
-      };
-
-      myCar.showDetails();
+      function greetings() {
+        alert("Good Afternoon User!");
+        document.bgColor = "yellow";
+      }
     </script>
   </head>
-
-  <body></body>
+  <body>
+    <p>Click the button below to get greetings</p>
+    <input type="button" value="Click me" onclick="greetings()" />
+  </body>
 </html>
