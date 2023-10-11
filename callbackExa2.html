@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <
+    <title>Real World Scenario</title>
+    <script>
+      function download(url, p) {
+        setTimeout(() => {
+          console.log(`downloading ...${url}`);
+          p(url);
+        }, 3000);
+      }
+
+      function process(url) {
+        console.log(`processing ...${url}`);
+      }
+      let image = "http://www.scalive.in/courses.jpg";
+      download(image, process);
+      //some code
+    </script>
+  </head>
+
+  <body></body>
+</html>

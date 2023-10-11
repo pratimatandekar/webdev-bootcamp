@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CallBack Exercise( Using Arrow Fun)</title>
+		<script>
+			function startTimer() {
+				setInterval(() => {
+					let today = new Date();
+					console.log(today);
+				}, 1000);
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="button" onclick="startTimer()" value="start" />
+	</body>
+</html>

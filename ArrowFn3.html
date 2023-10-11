@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrow Function With this</title>
+    <script>
+      let person = {
+        fname: "Amit",
+        age: 21,
+        toString: () => {
+          return `${this.fname},${this.age}`;
+        },
+      };
+      document.write(person.toString());
+    </script>
+  </head>
+
+  <body></body>
+</html>
+
+
+
