@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      let company = {
+        name: "Apple",
+        fundationYear: 1976,
+        productList: [
+          { name: "IPhone", year: 2007 },
+          { name: "Ipad", year: 2010 },
+        ],
+        foundedBy: ["Steve Jobs", "Steve wozniak"],
+        ceo: "steve Jobs",
+        createNewProduct: function (product) {
+          company.productList.push(product);
+        },
+        resign: function () {
+          str = company.ceo;
+          company.ceo = null;
+          return str;
+        },
+        hireCeo: function (name) {
+          company.ceo = name;
+        },
+        toString: function () {
+          let str = "";
+          for (p of company.productList) {
+            str = str + p.name + "-" + p.year + ",";
+          }
+          return `<strong>Name:</strong>${company.name}<br>
+            <strong>foundation year </strong>${company.fundationYear}<br>
+            <strong>founders:</strong>${company.foundedBy.join(",")}
+            <br> <strong> CEO:</strong> ${company.ceo}<br>
+            <strong>Products:</strong>${str}`;
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <script>
+      document.write("<h3>Company Details</h3>");
+      document.write(company);
+      document.write("<br><br>CEO:" + company.resign() + "resigned");
+      document.write("<h3>After CEO's Resination </h3>");
+      document.write(company);
+      company.hireCeo("Tim cook");
+      document.write("<h3>After Hiriing new CEO</h3>");
+      document.write(company);
+      company.createNewProduct({
+        name: "IHome",
+        year: 2020,
+      });
+      document.write("<h3>After Adding new Product</h3>");
+      document.write(company);
+    </script>
+  </body>
+</html>

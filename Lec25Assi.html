@@ -1,0 +1,23 @@
+<html>
+	<head></head>
+	<body>
+		<h2>Sorting Array Of Objects</h2>
+		<script>
+			let employees = [
+				{ name: "Neeraj", salary: 90000, hireDate: "July 1, 2010" },
+				{ name: "Deepak", salary: 75000, hireDate: "August 15, 2009" },
+				{ name: "Anshul", salary: 80000, hireDate: "December 12, 2011" },
+			];
+
+			document.write("<h3>Before Sorting</h3>");
+			for (let e of employees) {
+				document.write(`${JSON.stringify(e)}<br>`);
+			}
+			employees.sort((a, b) => b.salary - a.salary);
+			document.write("<h3>After Sorting</h3>");
+			for (let e of employees) {
+				document.write(`${JSON.stringify(e)}<br>`);
+			}
+		</script>
+	</body>
+</html>
