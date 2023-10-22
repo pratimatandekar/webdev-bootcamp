@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>text-decoration</title>
+    <title>List styling positon</title>
     <style>
-        p{
-            width: 300px;
-            text-align: justify;
-        }
-    </style>
+            ol{
+               background: red;
+                padding: 5px;
+            }
+            ol.in li{
+                list-style-position: inside;
+            }
+            ol.out li{
+                list-style-position: outside;
+            }
+        </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vero enim amet ipsum iusto vitae voluptatibus ad blanditiis velit, perferendis laboriosam facilis dolore, vel eos, magni illum! Odio, non accusantium. Nobis, natus. Doloremque eos in voluptates repellat voluptatibus. Possimus ullam minus vero eos nostrum ut a velit omnis doloremque saepe nulla, at odit ex quis blanditiis aliquid eius quos modi fugit aspernatur voluptatibus officia iure repellat voluptate. Porro repellat voluptatem rerum dolor debitis numquam, doloribus ipsam vero ullam odit architecto quaerat eveniet voluptate soluta! Repudiandae obcaecati esse id ipsam porro doloribus, quisquam possimus laudantium quibusdam facilis odit vel deserunt? Consectetur fugiat nam quo sequi nulla nobis eligendi veritatis totam hic possimus laboriosam nostrum reiciendis a omnis nemo debitis quam beatae vel voluptatem suscipit iusto id iure, laborum facere. Reiciendis perspiciatis praesentium omnis hic expedita qui aliquam natus molestias numquam quae ipsum, nesciunt alias earum illo, voluptates ipsa labore nulla quas. Nesciunt, quos alias voluptas vitae fugiat quo eos, nihil eum, corporis aliquid error labore eveniet! Nemo nihil impedit aut distinctio quisquam qui est eligendi iste illum excepturi? Asperiores vero temporibus, suscipit dolore minus quis itaque veritatis minima quaerat, laborum consectetur accusantium nihil, impedit tempore. Asperiores cupiditate voluptatum accusamus a odio!</p>
+    <h1>Courses</h1>
+    <ol class="in">
+    
+        <li>C</li>
+        <li>C++</li>
+        <li>Java SE</li>
+        <li>Jakarta EE</li>
+        <li> Spring</li>
+        </ol>
+        <ol class="out">
+    
+            <li>C</li>
+            <li>C++</li>
+            <li>Java SE</li>
+            <li>Jakarta EE</li>
+            <li> Spring</li>
+    </ol>
 </body>
 </html>
