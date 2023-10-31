@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Understanding innerText</title>
+    <script>
+        function operate() {
+            let ul = document.querySelector('ul');
+            let listItems = ul.querySelectorAll('li');
+            listItems.forEach(item => {
+                item.innerText = item.innerText.toUpperCase();
+            });
+
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Welcome To SCA</h2>
+    <h3>Our Mission</h3>
+    <p>The mission of the SHARMA COMPUTER ACADEMY is to provide its students with the foundation for lifelong learning
+    </p>
+    <h3>Our Courses</h3>
+    <ul>
+        <li>C </li>
+        <li>C++</li>
+        <li>Python </li>
+        <li>Django</li>
+        <li>Java</li>
+        <li>Oracle</li>
+    </ul>
+    <input type="button" value="Click me" onclick="operate()" />
+</body>
+
+</html>
