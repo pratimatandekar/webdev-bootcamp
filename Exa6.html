@@ -1,32 +1,54 @@
 <html>
 	<head>
-		<title>Understanding innerHTML</title>
+		<title>Underatnding classList</title>
+		<link rel="stylesheet" type="text/css" href="mystyles.css" />
 		<script>
-			function addNewCourse() {
-				// add a new course
-				let newCourse = prompt("Enter new course name:");
-				let ul = document.querySelector("ul");
-				ul.innerHTML += "<li>" + newCourse + "</li>";
+			function decorate() {
+				//Write code to add the class to paragraphs
+				let allPara = document.querySelectorAll("p");
+				allPara.forEach((p) => {
+					let str = p.innerText;
+					if (str.indexOf("success") >= 0) {
+						p.classList.add("success");
+					} else if (str.indexOf("error") >= 0) {
+						p.classList.add("error");
+					}
+				});
 			}
 		</script>
 	</head>
 
 	<body>
-		<h2>Welcome To SCA</h2>
-		<h3>Our Mission</h3>
 		<p>
-			The mission of the SHARMA COMPUTER ACADEMY is to provide its students with
-			the foundation for lifelong learning
+			Lorem ipsum, success dolor sit amet consectetur adipisicing elit.
+			Quibusdam molestiae quidem quis tempore excepturi dolore labore, delectus
+			necessitatibus inventore fugit vel hic, eum at beatae mollitia impedit!
+			Deserunt, nihil!
 		</p>
-		<h3>Our Courses</h3>
-		<ul>
-			<li>C</li>
-			<li>C++</li>
-			<li>Python</li>
-			<li>Django</li>
-			<li>Java</li>
-			<li>Oracle</li>
-		</ul>
-		<input type="button" value="Click me" onclick="addNewCourse()" />
+		<p>
+			Lorem ipsum, error dolor sit amet consectetur adipisicing elit. Quibusdam
+			molestiae quidem quis tempore excepturi dolore labore, delectus
+			necessitatibus inventore fugit vel hic, eum at beatae mollitia impedit!
+			Deserunt, nihil!
+		</p>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+			molestiae quidem quis tempore excepturi dolore labore, delectus
+			necessitatibus inventore fugit vel hic, eum at beatae error mollitia
+			impedit! Deserunt, error
+		</p>
+		<p>
+			Lorem success ipsum, dolor sit amet consectetur adipisicing elit.
+			Quibusdam molestiae quidem quis tempore excepturi dolore labore, delectus
+			necessitatibus inventore fugit vel hic, eum at beatae mollitia impedit!
+			Deserunt, nihil!
+		</p>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+			molestiae quidem quis tempore excepturi dolore labore, delectus
+			necessitatibus inventore fugit vel hic, eum at beatae mollitia impedit!
+			Deserunt, nihil!
+		</p>
+		<input type="button" value="Add class" onclick="decorate();" />
 	</body>
 </html>
