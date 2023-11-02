@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancer with botton </title>
-    <style>
-            a:link,
-            a:visited{
-                color: white;
-                background-color: rgb(0, 195, 255);
-                padding: 5px 20px;
-                border: 4px solid black;
-                text-decoration: none;
-                font-size: 22px;
-                font-family: 'Tangerine', cursive, monospace;
-            }
-            a:hover,
-            a:active{
-                background-color: blueviolet;
-                border: 4px solid red;
-                color: black;
-
-            }
-    </style>
-</head>
-<body>
-    <p><a href="https://www.amazon.in/">Visit Amazon</a></p>
-</body>
+<html>
+  <head>
+    <title>Button</title>
+    <script>
+      function greetings() {
+        alert("Good Afternoon User!");
+        document.bgColor = "yellow";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Click the button below to get greetings</p>
+    <input type="button" value="Click me" onclick="greetings()" />
+  </body>
 </html>
