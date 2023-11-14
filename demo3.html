@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List styling positon</title>
-    <style>
-            ol{
-               background: red;
-                padding: 5px;
-            }
-            ol.in li{
-                list-style-position: inside;
-            }
-            ol.out li{
-                list-style-position: outside;
-            }
-        </style>
-</head>
-<body>
-    <h1>Courses</h1>
-    <ol class="in">
-    
-        <li>C</li>
-        <li>C++</li>
-        <li>Java SE</li>
-        <li>Jakarta EE</li>
-        <li> Spring</li>
-        </ol>
-        <ol class="out">
-    
-            <li>C</li>
-            <li>C++</li>
-            <li>Java SE</li>
-            <li>Jakarta EE</li>
-            <li> Spring</li>
-    </ol>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Iterating Over The Object</title>
+		<script>
+			let myCar = {
+				company: "Maruti",
+				model: "Baleno",
+				year: 2012,
+			};
+
+			for (let x in myCar) {
+				console.log(myCar[x]);
+			}
+		</script>
+	</head>
+
+	<body></body>
 </html>
