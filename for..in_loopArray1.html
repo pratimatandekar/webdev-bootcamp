@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing the Array with undefined Values</title>
+    <script>
+        let nums = [10, ,30,40, ,60];
+        for(let i =0;i<nums.length;i++){
+            document.write(` ${nums[i]}<br>`);
+        }
+        document.write("Traversing using fot ...in <br>");
+        for(let i in nums){
+            document.write(` ${nums[i]}<br>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
