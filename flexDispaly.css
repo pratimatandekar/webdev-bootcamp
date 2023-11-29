@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+
+}
+.flex-container{
+    border: 6px solid black;
+    display:inline-flex  ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-item{
+    color: black;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+}
+.item-1{
+    background-color: aqua ;
+}
+.item-2
+{
+    background-color: blue;
+}
+.item-3
+{
+    background-color:yellowgreen;
+}
+.item-4
+{
+    
+    background-color: blueviolet;
+}
+.item-5
+{
+    background-color: rgb(30, 255, 0);
+}
+.item-6
+{
+    background-color: gray;
+}
+.item-7
+{
+    background-color: rgb(0, 255, 153);
+}
+.item-8
+{
+    background-color: pink;
+}
+.item-9
+{
+    background-color: yellow;
+}
