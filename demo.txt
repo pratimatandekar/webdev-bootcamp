@@ -1,0 +1,20 @@
+Enter a number=2;
+2*1=2
+2*2=4
+.
+.
+.
+2*10=20;
+
+////////////////////
+Enter a number=5;,10
+5%1=0
+2
+3
+4
+5%5=0;
+Chek string palendrom
+=naman 
+=abba
+=pop
+
