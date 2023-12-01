@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Island+Moments&family=Shadows+Into+Light&family=Victor+Mono:ital,wght@1,100&family=Ysabeau+Office&display=swap');
-
-h1{
-    font-family: 'Island Moments', cursive;
+#red{
+    color: red;
 }
-p{
-    font-family: 'Fasthand', cursive;
+#blue{
+    color: blue;
+}
+#orange{
+    color: orange;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color: yellow;
+}
+.color-title{
+    font-weight: normal;
 }
