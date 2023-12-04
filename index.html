@@ -1,40 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>French Vocabulary</title>
-		<link rel="stylesheet" href="styles.css">
-	</head>
-
-	<body>
-		
-		<h1>Colors</h1>
-		<h2>Learn Colors In French!</h2>
-	//	<h2 class="color-title" id="red">Rouge</h2>
-		<img  src="./media/images/red.png" alt="red" />
-
-		//<h2 class="color-title" id="blue">Bleu</h2>
-		<img   src="./media/images/blue.png" alt="blue" />
-
-		//<h2 class="color-title" id="orange">Orange</h2>
-		<img   src="./media/images/orange.png" alt="orange" />
-
-	//	<h2 class="color-title" id="green">Vert</h2>
-		<img   src="./media/images/green.png" alt="green" />
-
-	//	<h2 class="color-title" id="yellow">Jaune</h2>
-		<img  src="./media/images/yellow.png" alt="yellow" />
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form </title>
+    
+</head>
+<body   bgcolor="#C1FBC7">
+    <h2 align="center">
+        Job Application Form 
+    </h2>
+    <hr width="700px" color="black">
+     <table width="700px" align="center"  cellspacing="25px">
+            <form action="GET">
+                <tr>
+                    <th align="left">
+                        Full Name
+                    </th>
+                    <td align="right">
+                        <input type="text" placeholder="Enter Your Name" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        Job Tittle
+                    </th>
+                    <td align="right">
+                        <input type="text" placeholder="Enter Your Job Tittle" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        Current Company
+                    </th>
+                    <td align="right">
+                        <input type="text" placeholder="Enter Your Current Company" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        Contact Number
+                    </th>
+                    <td align="right">
+                        <select name="mobiln" id="mn">
+                            <option value="+91"> +91</option>
+                            <option value="+94"> +94</option>
+                        </select>
+                         <input type="tel" placeholder="Enter Your Contact Number" size="42">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        Email
+                    </th>
+                    <td align="right">
+                         <input type="email" placeholder="Enter Your Email" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        Work State
+                    </th>
+                    <td align="right">
+                        <input type="radio" name="work_state" value="ws"> Full Time
+                    <input type="radio" name="work_state" value="ws"> Part Time
+                    <input type="radio" name="work_state" value="ws"> Per Dien
+                    <input type="radio" name="work_state" value="ws"> Others
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                        Salary
+                    </th>
+                    <td align="right">
+                         <input type="email" placeholder="Salary" size="30">
+                         <select name="salry" id="money">
+                            <option value="salry"> Rupees</option>
+                            <option value="salry"> Doler</option>
+                            <option value="salry"> Kuvet</option>
+                            <option value="salry"> Dhiram</option>
+                         </select>
+                         <select name="work_ex" id="we">
+                            <option value="work_ex"> Year</option>
+                            <option value="work_ex"> Month</option>
+                            <option value="work_ex"> Week</option>
+                            <option value="work_ex"> Days</option>
+                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                       Experiance
+                    </th>
+                    <td align="right">
+                         <input type="text" placeholder="Enter Your Experiance" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">
+                       Current Location
+                    </th>
+                    <td align="right">
+                         <input type="text" placeholder="Enter Your Current Location" size="50">
+                    </td>
+                </tr>
+                <tr><th align="left">
+                     Permanent Address
+                 </th>
+                 <td align="right">
+                      <textarea name="text" id="text_are" cols="48" rows="5">  Enter Your Paramanent Address             
+                      </textarea>
+                 </td>
+             </tr>
+             <tr>
+                <th align="left">
+                    Upload Resume 
+                </th>
+                <td align="center">
+                    <input type="file" name="chose_file" id="File">
+                </td>
+             </tr>
+             <tr>
+                <th> <input type="submit" name="submit_form" id="sub_form"></th>
+                <th><input type="reset" value="Reset"></th>
+             </tr>
+            </form>
+            
+     </table>
+     <hr width="700px" color="black">
+</body>
 </html>
-
-<!-- 
-TODOs
-IMPORTANT: You should not need to make ANY CHANGES to index.html
-All code should be written in your CSS file.
-
-1. Create a CSS file and incorporate it as an external stylesheet.  // done 
-2. Use CSS to style each of the color titles to meaning.   	  // done 
-3. Use CSS to change all the color titles to have "font-weight: normal;"    // done 
-4. Use CSS (not HTML) to make all the images 200px heigh and 200px wide.      // done 
-
--->
