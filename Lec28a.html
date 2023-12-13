@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Assignment</title>
+		<script>
+			function showContactForm() {
+				// add code to show contact form
+                let div =document.querySelector("div");
+                div.innerHTML="<h3>Contact Form</h3>";
+                div.innerHTML+="form action='contect.js'>";
+                div.innerHTML+= "Your Name:<input type='text'placeholder='Your name'";
+                div.innerHTML+="<br>Your Email:<input type='email' placeholder='your email'";
+                div.innerHTML+="<br>Your Phone"
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Get In Touch</h3>
+		<input
+			type="button"
+			value="Show Contact Form"
+			onclick="showContactForm()"
+		/>
+		<div></div>
+	</body>
+</html>
