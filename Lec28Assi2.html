@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Assignment</title>
+		<script>
+			function showLink() {
+				//code to add the link dynamically
+				let siteName = prompt("Enter website you want to visit");
+				if (siteName != null) {
+					let link = document.querySelector("a");
+					link.setAttribute("href", "http://www." + siteName);
+					let dotPos = siteName.indexOf(".");
+					let name = siteName.substring(0, dotPos);
+					link.innerText = "Visit " + name;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Generate Website Link</h3>
+		<input type="button" value="Create Website Link" onclick="showLink()" />
+		<br />
+		<a></a>
+	</body>
+</html>
