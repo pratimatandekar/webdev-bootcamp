@@ -1,56 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 </title>
-    <script src="https://kit.fontawesome.com/f4f5ae1512.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Nunito+Sans&family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <style>
-        #font,i{
-            font-family: 'Mynerve', cursive;
-            font-family: 'Nunito Sans', sans-serif;
-            font-family: 'Sansita Swashed', cursive;
-            color: blueviolet; 
-            padding: 10px 5px 6px 100px;
-           
-        }
-       
-        ul{
-            
-           padding: 0px;
-           background:  rgb(225, 225, 225);
-    
-        }
-      img{
-        height: 50px;
-        width: 50px;
-        padding: 10px 10px 0px 50px;
-        display: block; 
-       }
-       li,img{
-        display: inline;
-       }
-        img:hover{
-             background-color: rgb(59, 57, 57);
-        }  
-        
-    </style>
-</head>
-<body>
-   
-  <ul>
-    <li id="font">  Out Tech Stack       </li>
-    <li  ><i class="fa-solid fa-hand-point-right"></i></h2></li>
-    <li><img src="./HTML5_logo_and_wordmark.svg.png" title="html"></li>
-    <li> <img src="./download.png" title="css"></li>
-    <li><img src="./JavaScript-Logo.png" title="java_script"></li>
-    <li>  <img src="Java-Logo.png" title="java"></li>
-    <li> <img src="2560px-Spring_Framework_Logo_2018.svg.png" title="spring"></li>
-    <li> <img src="2048px-Angular_full_color_logo.svg.png" title="angular"></li>
-    <li> <img src="Typescript_logo_2020.svg.png" title="type_script"></li>
-    <li> <img src="./download (1).png" title="kafka"></li>
-    <li></li>
-  </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratima Tandekar- Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!--Nvabar starts here-->
+    <nav id="desktop-nav">
+      <div class="logo">Pratima Tandekar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Navbar ends here-->
+
+    <!--Hamburger Menu-->
+    <nav id="hamburger-nav">
+      <div class="logo">Pratima Tandekar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Hamburger Menu-->
+
+    <!--Profile Section starts here-->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/myimages/profile-pic.png" alt="Mohnish Raikwar Img" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pratima Tandekar</h1>
+        <span class="section___text__p2"></span>
+        <div class="btn-container">
+          <button class="btn btn-color-1">Download CV</button>
+          <button class="btn btn-color-2">Contact Info</button>
+        </div>
+        <div id="social-container">
+          <img
+            src="images/icons/linkedin.png"
+            alt="linkedin icon"
+            class="icon"
+          />
+          <img src="images/icons/github.png" alt="github icon" class="icon" />
+        </div>
+      </div>
+    </section>
+    <!--Profile section ends here-->
+
+    <!--About Section starts here-->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="images/myimages/about-pic.png"
+            alt="my about pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img src="images/icons/experience.png" alt="" class="icon" />
+              <h3>Experience</h3>
+              <p>3+ Years <br />Front End Development</p>
+            </div>
+            <div class="details-container">
+              <img src="images/icons/education.png" alt="" class="icon" />
+              <h3>Experience</h3>
+              <p>3+ Years <br />Front End Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              fugit doloremque esse soluta dolorum aperiam, earum ratione a
+              cupiditate corporis provident cum aliquam, amet numquam
+              necessitatibus sit natus, voluptatibus qui!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About section ends here-->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".section___text__p2", {
+        strings: ["React JS Developer", "Front End Developer"],
+        typeSpeed: 50,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
