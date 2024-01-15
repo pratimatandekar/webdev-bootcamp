@@ -1,16 +1,18 @@
 <html>
-	<head>
-		<title>AJAX Example 1</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<script src="app.js"></script>
-	</head>
-	<body>
-		<div>
-			Click the button below to get date and time from server
-			<br />
-			<input type="button" value="Show Date Time" onclick="connect()" /><br />
-			<br />
-			<span id="currentdatetime"></span>
-		</div>
-	</body>
+  <head>
+    <title>AJAX Example 3</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+  </head>
+  <body>
+    <div id="container">
+      <h2>
+        Select A Timezone To View It's Date And Time
+      </h2>
+      <select id="timezone"></select>
+      <input type="button" value="Show Date And Time" onclick="showData()"/><br/>
+      <br/>
+      <span id="currentdatetime"></span>
+    </div>
+  </body>
 </html>
