@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Assignment</title>
+    <script>
+      function addPara() {
+        let div = document.querySelector("div");
+        let para = document.createElement("p");
+        let childElem = div.children;
+        let x=childElem.length+1;
+        let text = document.createTextNode("I am para "+x);
+		para.appendChild(text);
+        div.appendChild(para);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="d1">
+      <p id="p1">I am para 1</p>
+      <p id="p2">I am para 2.</p>
+    </div>
+    <input type="button" value="add new para" onclick="addPara();" />
+  </body>
+</html>
