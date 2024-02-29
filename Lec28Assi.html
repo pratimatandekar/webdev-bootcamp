@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Assignment</title>
+		<script>
+			function showContactForm() {
+				let div = document.querySelector("div");
+				div.innerHTML = "<h3>Contact Form</h3>";
+				div.innerHTML += "<form action='contact.js'>";
+				div.innerHTML +=
+					"Your Name:<input type='text' placeholder='your name'>";
+				div.innerHTML +=
+					"<br>Your Email:<input type='email' placeholder='your email id'>";
+				div.innerHTML +=
+					"<br>Your Phone:<input type='phone' placeholder='your phone no'>";
+				div.innerHTML += "<br><input type='submit' value='Save'>";
+				div.innerHTML += "</form>";
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Get In Touch</h3>
+		<input
+			type="button"
+			value="Show Contact Form"
+			onclick="showContactForm()"
+		/>
+		<div></div>
+	</body>
+</html>
