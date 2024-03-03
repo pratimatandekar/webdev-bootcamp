@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Using parseInt</title>
+    <title>Templet string</title>
     <script>
-       let age;
-       age=prompt("your name?","type here");
-       age=parseInt(age);
-       document.write(
-        "<br>Your name is  "+ age +" years & After 5 years you would be "+
-        (age+ 5  )+" years old"
-       );
+        var a=10;
+        var b=20;
+        document.write(`var a is ${a} and var b is ${b} <br> and the sum ${a+b}`);
+        document.write("<br>");
+        document.write(`2 to the power 3 is ${Math.pow(2,3)}`);
     </script>
 </head>
 <body>
