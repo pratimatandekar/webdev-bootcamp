@@ -1,0 +1,21 @@
+h1{
+    border: 2px solid;
+     width: 33.33%;
+}
+#outter{
+    background-color: pink;
+    width: 400px;
+    height: 400px;
+}
+#inner{
+    background-color:greenyellow;
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
+}
+#yewala{
+    background-color:red;
+    width: 100px;
+    height: 100px;
+    margin-left: 1920px;
+}
