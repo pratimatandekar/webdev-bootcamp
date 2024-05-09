@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let nums=[10,,20,30,,40,,50];
+         for(let j=0;j<nums.length;j++){
+      document.write(`${nums[j]}<br>`);
+    }
+    document.write(`<br>`);
+
+    for(let i of nums){
+        document.write(`${i}<br>`);
+    }
+    document.write(`<br>`);
+    for(let i in nums){
+        document.write(`${nums[i]}<br>`);
+    }
+    
+    </script>
+</body>
+</html>
