@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        p{
-           color: blue;
-        }
-        .para-sf{
-            color: orange;
-        }
-        #black-para{
-            color:green !important;
-        }
-        #black-para:hover{
-            color:black ;
-        }
-    </style>
 </head>
 <body>
-   <p class="para-sf" id=black-para style="color: aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officia est ducimus veritatis aut placeat alias quia. Aliquam, hic perspiciatis?</p>
+    <h2> Apllication form </h2> <br>
+    <form > 
+        <label for="fname">First Name:</label>
+        <input id="fname" type="text" placeholder="Enter First Name">
+        <label for="LName">Last name:</label>
+        <input id="LName" placeholder="Last name"> <br> <br>
+        <label for="">Date of birth:</label>
+        <input type="date"> 
+        <label > Age:</label>
+        <input type="number"> <br> <br>
+        <label for="Gender">Gender:</label>
+        <select name=" gender" >
+         <option value="male">male</option>
+         <option value="female">female</option>
+         </select>
+         <label for="ff">Email Address:</label>
+         <input id="ff" type="email"> <br> <br>
+         <label for="">Position avalable:</label> 
+         <input type="radio" name="a">junior Devloper
+         <input type="radio" name="a" >Mid - level Devloper
+         <input type="radio" name="a" > Senior Devloper  <br> <br>
+         <label for="">Programing languages:</label>
+         <input type="checkbox" name="" id="">Java
+         <input type="checkbox" name="" id="">Javascript
+          <input type="checkbox" name="" id="">Python <br> <br>
+          <label for="pp">Password:</label>
+          <input id="pp" type="password">
+          <label for="cc">Conform Password:</label>
+          <input   id="cc" type="password"><br><br>
+          <input type="submit">
+          <input type="reset">
 
+    </form>
 </body>
 </html>
