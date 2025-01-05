@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row; /* Default is row */
+            justify-content: space-around; /* Distribute items with space around them */
+            align-items: center; /* Align items vertically in the center */
+            height: 100vh; /* Full viewport height */
+            background-color: #f4f4f4;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex; /* Flexbox inside each box for centering text */
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .box1 {
+            background-color: #ff6b6b;
+        }
+        .box2 {
+            background-color: #4ecdc4;
+        }
+        .box3 {
+            background-color: #1a535c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>
